@@ -1,0 +1,240 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: 'General Sans Medium';
+}
+body,html{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+#main{
+    width: 100%;
+}
+/* ---boundings  */
+.bounding{
+    width:fit-content;
+    /* background-color: red; */
+    overflow: hidden;
+}
+.boundingElem{
+    transform: translateY(120%);
+}
+/* ---Mouse ------ */
+#miniCircle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    z-index: 999;
+    position: absolute;
+    background-color: white;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.2s;
+}
+/* ---------Nav bar styling ------- */
+nav{
+    height: 10vh;
+    padding: 1vh 2.9vw;
+    font-size: 1.2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+}
+#firstView{
+    height: 100vh;
+    position: relative;
+}
+/* --------First Head styling--------- */
+
+#h1Headings{
+    padding-left: 2.9vw ;
+    margin-top: 9vh;
+    text-transform: uppercase;
+    
+}
+#h1Headings h1{
+    font-size: 10vw;
+    opacity: 0.7;
+    font-weight: 500;
+}
+#firsthead{
+margin-bottom: -50px;
+}
+#headElements{
+    padding-left: 12vw;
+    display: inline-block;
+
+}
+#h4Down{
+    font-size:20px;
+    margin-top: -2vh;
+    text-align: right;
+}
+/* ---First page Mid elements  */
+#midHead{
+    margin-top: 9vh;
+    text-transform: uppercase;
+    margin-right: 3vw;
+    font-size: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#midHead h4{
+    margin: 10px 0;
+}
+/* bottom elements of first page  */
+#bottomElem{
+    width: 95%;
+    margin: 0 5%;
+    font-size:2vh ;
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+i.ri-arrow-right-up-line{
+    color: rgb(255, 255, 255);
+    font-size: 3vh;
+
+}
+i.ri-arrow-down-line{
+    color: black;
+    font-size: 3vh;
+    background-color: rgb(169, 169, 169);
+    border-radius: 50%;
+}
+#arrows{
+    margin-right: 50px;
+}
+
+/* ---second page------ */
+#midView{
+    padding-top: 200px;
+}
+.elems{
+    margin-left: 8vh;
+    width: 87%;
+    border-top: 2px solid #888;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    animation-name: anim;
+    animation-duration: 0.5s;
+    
+}
+.elems:hover h2{
+    opacity: 0.4;
+    
+}
+@keyframes anim {
+    from{
+        left: 0px;
+    }
+    to{
+        left: 10;
+    }
+}
+.elems h2{
+    padding: 6vh 0vh;
+    opacity: 0.7;
+    text-transform: uppercase;
+    font-size: 12vh;
+    font-weight: 500;
+}
+.elems h5{
+    font-size: 2vh;
+}
+.lastElem{
+    border-bottom: 2px solid #888;
+}
+.elems img{
+    position: absolute;
+    z-index: 5;
+    height:30vh;
+    width: 20vw;
+    opacity: 0;
+}
+
+/* ---About section ------ */
+#aboutSec{
+    width: 80%;
+    padding: 200px 0;
+    /* height: 80vh; */
+    margin: 0 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+#aboutNote{
+    width: 35%;
+}
+#aboutSec img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+#aboutNote p{
+    font-family: 'General Sans Regular';
+    font-weight: 300;
+    font-size: 25px;
+}
+#one{
+    font-weight: 500;
+    opacity: 0.7;
+}
+#three{
+    font-weight: 500;
+    border: 1px solid white;
+    background-color: transparent;
+    padding: 5px 10px;
+    font-size: 20px;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+/* --Forgot section---- */
+
+#forgotSec{
+    padding-left:5vw;
+    font-family:'General Sans Regular';
+    text-transform: uppercase;
+    font-weight: 200;
+    padding-bottom: 200px;
+}
+#forgotSec h4{
+    opacity: 0.7;
+}
+
+/*----------------- Footer------ */
+#footer{
+    text-transform: uppercase;
+    /* background-color: red */
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    font-size: 20px;
+}
+#leftFooter{
+    font-size: 30px;
+    font-family: 'General Sans Regular';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+#rightFooter a{
+    padding: 20px;
+    text-decoration: none;
+}
